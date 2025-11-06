@@ -15,5 +15,5 @@ cp -f /var/www/bitrixdock/.env_template /var/www/bitrixdock/.env
 sed -i 's/SITE_PATH=.\/www/SITE_PATH=\/var\/www\/bitrix/' /var/www/bitrixdock/.env
 
 echo "Run"
-docker compose -p bitrixdock down
-docker compose -f /var/www/bitrixdock/docker-compose.yml -p bitrixdock up -d
+docker-compose -p bitrixdock down
+docker-compose -f /var/www/bitrixdock/docker-compose.yml -p bitrixdock up -d
